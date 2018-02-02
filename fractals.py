@@ -1,8 +1,14 @@
 from turtle import *
 
 
+# expands the sequence as in wikipedia, the order is the depth,  the axiom is the start
+# and follows the rules, care, the indices of a variable and her rule in the list have to be the same
+# for example: [X, Y] -> [XX, YY] means X follows the rule XX and Y follows YY!
+
 def expand(order, axiom, variables, rules):
-    """ expands the L system sequence"""
+    """ axiom is string
+    variables and rules are list of strings
+    """
     expansion = ""
     if order == 0:
         return list(axiom)
@@ -64,7 +70,7 @@ def drawing(axiom, angle, distance):
             t.left(angle)
         if variable == '+':
             t.right(angle)
-    # t.getscreen().getcanvas().postscript(file="picture.eps")
+    # t.getscreen().getcanvas().postscript(file="picture.eps") if you want to print image to postscript
     exitonclick()
 
 
