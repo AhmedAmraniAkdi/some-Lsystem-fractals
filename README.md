@@ -4,7 +4,7 @@ Reading how the sequence is generated on wikipedia is really good for understand
 
 Gives you something like this:
 
-IMAGE
+![alt text](https://raw.githubusercontent.com/AhmedAmraniAkdi/some-Lsystem-fractals/master/Pictures/colored_tree_toBlue.png)
 
 First program on Python and first repository on Github, don't be harsh!
 
