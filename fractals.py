@@ -47,12 +47,12 @@ def drawing(axiom, angle, distance):
     directions = []
     colorplan = []
     for variable in axiom:
-        if count % 3 == 0:
+        if count % 3 == 0: # every 3 steps change color
             # rainbow()
             toBlue()
-        if variable == '0' or variable == '1':
+        if variable == '0' or variable == '1': 
             t.forward(distance)
-            count += 1
+            count += 1 # add counting only when moving forward
         if variable == '[':
             positions.append(t.pos())
             directions.append(t.heading())
